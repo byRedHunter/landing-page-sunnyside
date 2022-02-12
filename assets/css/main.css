@@ -184,6 +184,58 @@ a {
 .text-2 span {
 	border-bottom: 7px solid hsla(7, 99%, 70%, 0.404);
 }
+
+.testimonials {
+	background-color: var(--color-light);
+   
+   }
+   
+   .test-title {
+	   padding: 60px 0px 50px 0px;
+	   font-size: 25px;
+	   text-align: center;
+	   text-transform: uppercase;
+	   letter-spacing: 3px;
+	   font-family: var(--font-title);
+	   color: var(--color-gray-blue);
+   }
+   
+   .profile {
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   flex-direction: column;
+   }
+   
+   .image-profile {
+	   padding: 35px 0px;
+	   border-radius: 100%;
+   }
+   
+   .info-profile {
+	   max-width: 330px;
+	   text-align: center;
+	   color: var(--color-gray);
+	   font-family: var(--font-content);
+	   line-height: 1.5rem;
+	   margin-bottom: 30px;
+   }
+   
+   .name-profile {
+	   text-align: center;
+	   font-family: var(--font-title);
+	   color: var(--color-dark-blue);
+	   padding-bottom: 20px;
+	   
+   }
+   
+   .info-work {
+	   padding-bottom: 30px;
+	   text-align: center;
+	   font-family: var(--font-content);
+	   color: var(--color-gray-blue);
+   }
+
 @media screen and (min-width: 600px) {
 	.hero {
 		background-image: url('../images/desktop/image-header.jpg');
@@ -272,7 +324,34 @@ a {
 	.hero-two span {
 		padding: 12px 5px;
 	}
+	.testimonials {
+		height: 100vh;
+	}
+
+	.test-title {
+		padding: 100px 0px 40px 0px;
+	}
+	.profiles-1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.profiles-2 {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.profile {
+		margin-right: 20px;
+	}
+
+	.info-profile {
+		max-width: 350px;
+		margin-bottom: 60px;
+	}
 }
+
 @media screen and (min-width: 1000px) {
 	.header,
 	.hero {
@@ -287,3 +366,4 @@ a {
 		padding: 100px 135px;
 	}
 }
+
