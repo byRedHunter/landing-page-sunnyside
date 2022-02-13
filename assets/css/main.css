@@ -90,7 +90,7 @@ a {
 	font-family: var(--font-title);
 	color: var(--color-dark-blue);
 	padding: 8px 24px;
-	border-radius: 25px;
+	border-radius: 25px;	
 }
 .menu .item-button:hover {
 	color: var(--color-dark-blue);
@@ -122,6 +122,66 @@ a {
 	text-align: center;
 	letter-spacing: 4px;
 }
+/* inicio-última parte */
+.img-gallery {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.img-gallery img {
+	width: 100%;
+}
+.img-gallery picture {
+	display: flex ;
+  }
+.option-menu {
+	flex-direction: column;
+}
+.title-font  {
+	display: flex;
+	align-items: center;
+
+}
+
+.font {
+	width: 100%;
+	margin: 60px 110px 40px 90px;
+	display: flex;
+	align-items: center;
+	filter: invert(28%) sepia(22%) saturate(906%) hue-rotate(116deg) brightness(55%) contrast(91%);
+}
+.option-menu {
+	display: flex;
+	color: #458c7e;
+	background:#95d4c6;
+}
+.option {
+	display: flex;
+	justify-content: space-around;
+	padding:0px 15px 60px 20px ;
+
+}
+.itemone{
+	color: var(--color-dark-cyan);
+}
+.itemone:hover {
+	color: var(--color-light);
+}
+
+.rs {
+	display: flex;
+	background:#95d4c6;
+	justify-content: space-around;
+	padding:15px 90px 60px 90px ;
+	
+}
+.fab {
+	cursor: pointer;
+	color:hsl(168deg 44% 32%);
+}
+.fab:hover {
+	color: var(--color-light);
+}
+/* fin-última parte */
 @media screen and (min-width: 600px) {
 	.hero {
 		background-image: url('../images/desktop/image-header.jpg');
@@ -130,6 +190,23 @@ a {
 	.hero h1 {
 		margin-top: -10%;
 	}
+	/* inicio-última parte */
+	.font {
+		margin: 60px 140px 40px 140px;
+	}
+    .option {
+	font-size: 25px;
+	padding:0px 15px 60px 20px ;
+    }
+	.rs {
+		justify-items: normal;
+	}
+	.fab {
+		width: 80% 100% 30% 100%;
+		padding: 10px;
+	}
+
+	/* fin-última parte */
 }
 @media screen and (min-width: 800px) {
 	.icon-menu {
@@ -163,10 +240,41 @@ a {
 		font-size: 50px;
 		margin-top: -20%;
 	}
+	
+	/* inicio- última parte */
+	.font {
+		margin: 70px 160px 40px 160px;
+	}
+    .option {
+	font-size: 30px;
+    }
+	.rs {
+		padding: 15px 200px 60px 200px;
+	}
+	/* fin-última parte */
+
 }
 @media screen and (min-width: 1000px) {
 	.header,
 	.hero {
 		padding: 0 8%;
 	}
+	.img-gallery {
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+	}
+
+	/* inicio- última parte */
+	.font {
+		margin: 70px 1200px 40px 610px;
+	}
+    .option {
+	    font-size: 15px;
+		padding:0px 500px 60px 500px ;
+    }
+	.rs {
+		padding: 15px 580px 60px 570px;
+	}
+	/* fin-última parte */
+
 }
