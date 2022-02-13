@@ -202,20 +202,17 @@ a {
 	text-align: center;
 	font-weight: 20px;
 	align-items: center;
-	background-size: 100% 100% ;
-	background-position: bottom center ;
-
+	background-size: 100% 100%;
+	background-position: bottom center;
 }
 
 .cherry {
-	background-image: url("../images/mobile/image-graphic-design.jpg");
+	background-image: url('../images/mobile/image-graphic-design.jpg');
 }
 
 .orange {
-background-image: url("../images/mobile/image-photography.jpg");
+	background-image: url('../images/mobile/image-photography.jpg');
 }
-
-
 
 .title {
 	margin-bottom: 20px;
@@ -225,14 +222,61 @@ background-image: url("../images/mobile/image-photography.jpg");
 	color: var(--color-dark-green);
 }
 .description {
-	
 	line-height: 2rem;
 	text-align: center;
 	align-items: center;
 	color: var(--color-dark-green);
 	max-width: 419px;
 	justify-content: center;
-} 
+}
+.testimonials {
+	background-color: var(--color-light);
+}
+
+.test-title {
+	padding: 60px 0px 50px 0px;
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-family: var(--font-title);
+	color: var(--color-gray-blue);
+}
+
+.profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.image-profile {
+	padding: 35px 0px;
+	border-radius: 100%;
+}
+
+.info-profile {
+	max-width: 330px;
+	text-align: center;
+	color: var(--color-gray);
+	font-family: var(--font-content);
+	line-height: 1.5rem;
+	margin-bottom: 30px;
+}
+
+.name-profile {
+	text-align: center;
+	font-family: var(--font-title);
+	color: var(--color-dark-blue);
+	padding-bottom: 20px;
+}
+
+.info-work {
+	padding-bottom: 30px;
+	text-align: center;
+	font-family: var(--font-content);
+	color: var(--color-gray-blue);
+}
 
 @media screen and (min-width: 600px) {
 	.hero {
@@ -255,13 +299,12 @@ background-image: url("../images/mobile/image-photography.jpg");
 	}
 
 	.cherry {
-		background-image: url("../images/desktop/image-graphic-design.jpg");
-	
+		background-image: url('../images/desktop/image-graphic-design.jpg');
 	}
-	
+
 	.orange {
-		background-image: url("../images/desktop/image-photography.jpg");
-	} 
+		background-image: url('../images/desktop/image-photography.jpg');
+	}
 }
 @media screen and (min-width: 800px) {
 	.icon-menu {
@@ -336,28 +379,59 @@ background-image: url("../images/mobile/image-photography.jpg");
 		display: flex;
 	}
 
-	.cherry , .orange {
-	 width: 50%;
-		height: 90vh; 
-		padding-top: 420px ;
+	.cherry,
+	.orange {
+		width: 50%;
+		height: 90vh;
+		padding-top: 420px;
 	}
 
 	.description {
 		padding: 0px 25px;
-	}.cherry-orange {
+	}
+	.cherry-orange {
 		display: flex;
 	}
 
-	.cherry , .orange {
-	 width: 50%;
-		height: 100vh; 
-		padding-top: 420px ;
+	.cherry,
+	.orange {
+		width: 50%;
+		height: 100vh;
+		padding-top: 420px;
 	}
 
 	.description {
 		padding: 0px 25px;
 	}
+
+	.testimonials {
+		height: 100vh;
+	}
+
+	.test-title {
+		padding: 100px 0px 40px 0px;
+	}
+	.profiles-1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.profiles-2 {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.profile {
+		margin-right: 20px;
+	}
+
+	.info-profile {
+		max-width: 350px;
+		margin-bottom: 60px;
+	}
 }
+
 @media screen and (min-width: 1000px) {
 	.header,
 	.hero {
