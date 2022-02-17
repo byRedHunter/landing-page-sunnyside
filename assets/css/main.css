@@ -267,15 +267,22 @@ a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
+	display: none;
 }
 
 .profiles-2 {
-	padding-bottom: 40px;
+	padding: 0 40px 40px;
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .image-profile {
 	padding: 35px 0px;
 	border-radius: 100%;
+	object-fit: cover;
 }
 
 .info-profile {
@@ -300,6 +307,56 @@ a {
 	font-family: var(--font-content);
 	color: var(--color-gray-blue);
 }
+
+
+.control-left, .control-right {
+	position: absolute;
+	width: 40px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background linear 0.3s;
+}
+
+.control-right:hover,
+.control-left:hover {
+	background-color: rgba(48, 71, 94, 0.5);
+}
+
+.control-left {
+	top: 0;
+	left: 0;
+}
+
+.control-right {
+	top: 0;
+	right: 0;
+}
+
+.profile.active{
+	display: flex;
+	animation: showSlider 1s ease-in;
+}
+
+@keyframes showSlider {
+	from {
+		opacity: 0;
+		clip-path: circle(10% at 50% 50%);
+	}
+	80% {
+		opacity: 1;
+	}
+	to {
+		clip-path: circle(150% at 50% 50%);
+	}
+}
+
+.newprofile {
+	display: none;
+}
+
 
 /* inicio-última parte */
 .img-gallery {
@@ -478,20 +535,17 @@ a {
 	.test-title {
 		padding: 80px 0px 40px 0px;
 	}
-	.profiles-1 {
-		display: flex;
-		flex-direction: column;
-	}
 
 	.profiles-2 {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		padding-bottom: 50px;
 	}
 
-	.profile {
-		margin-right: 20px;
+	.test-title {
+		grid-column: 1/3;
+		grid-row: 1;
+		
 	}
 
 	.info-profile {
@@ -499,10 +553,39 @@ a {
 		margin-bottom: 60px;
 	}
 
+	.newprofile{
+		display: none;
+		padding: 0px auto;
+	}
+
+	.newprofile.ready{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		animation: showface2 1s ease-in;
+	}
+
+	@keyframes showface2 {
+		from {
+			opacity: 0;
+			clip-path: circle(10% at 50% 50%);
+		}
+		80% {
+			opacity: 1;
+		}
+		to {
+			clip-path: circle(150% at 50% 50%);
+		}
+		
+	}
+
 	.option {
 		justify-content: center;
 		column-gap: 50px;
 	}
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -523,4 +606,10 @@ a {
 	.text-2 {
 		padding: 100px 120px;
 	}
+
+	.profile ,.newprofile {
+		
+		justify-content: center;
+	}
+
 }
